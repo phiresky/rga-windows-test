@@ -1006,7 +1006,7 @@ dependencies = [
 
 [[package]]
 name = "ripgrep_all"
-version = "0.9.11"
+version = "0.9.12-alpha.0"
 dependencies = [
  "bincode",
  "bzip2",
