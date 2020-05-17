@@ -42,7 +42,7 @@ pub struct RgaArgs {
     ///
     /// By default, rga caches the extracted text, if it is small enough,
     /// to a database in ~/Library/Caches/rga on macOS,
-	/// ~/.cache/rga on other Unixes,
+    /// ~/.cache/rga on other Unixes,
     /// or C:\Users\username\AppData\Local\rga` on Windows.
     /// This way, repeated searches on the same set of files will be much faster.
     /// If you pass this flag, all caching will be disabled.
