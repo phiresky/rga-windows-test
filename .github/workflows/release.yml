@@ -176,8 +176,8 @@ jobs:
     - name: Build archive
       shell: bash
       run: |
-        staging="ripgrep-${{ env.RELEASE_VERSION }}-${{ matrix.target }}"
-        mkdir -p "$staging"/{complete,doc}
+        staging="ripgrep_all-${{ env.RELEASE_VERSION }}-${{ matrix.target }}"
+        mkdir -p "$staging"/doc
 
         cp {README.md,LICENSE.md} "$staging/"
         cp CHANGELOG.md "$staging/doc/"
