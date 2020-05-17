@@ -24,7 +24,6 @@ jobs:
         build:
         - nightly
         - nightly-musl
-        - nightly-mips
         - nightly-arm
         - macos
         - win-msvc
