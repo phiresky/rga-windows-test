@@ -54,9 +54,9 @@ jobs:
         - build: win-msvc
           os: windows-2019
           rust: nightly
-        - build: win-gnu
-          os: windows-2019
-          rust: nightly-x86_64-gnu
+        #- build: win-gnu
+        #  os: windows-2019
+        #  rust: nightly-x86_64-gnu
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
