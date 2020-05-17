@@ -30,8 +30,10 @@ set_default!(max_archive_recursion, 4, i32);
 
 #[derive(StructOpt, Debug, Deserialize, Serialize)]
 #[structopt(
+    name = "ripgrep-all",
     rename_all = "kebab-case",
-    author = "https://github.com/phiresky/ripgrep-all",
+    about = env!("CARGO_PKG_DESCRIPTION"),
+    author = env!("CARGO_PKG_HOMEPAGE"),
     // TODO: long_about does not seem to work to only show this on short help
     after_help = "-h shows a concise overview, --help shows more detail and advanced options.\n\nAll other options not shown here are passed directly to rg, especially [PATTERN] and [PATH ...]"
 )]
